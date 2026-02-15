@@ -199,9 +199,9 @@ You are PRISTOL AI — Protection. Perfected.
             return res.status(response.status).json({ error: data?.message || "Cohere API error" });
         }
 
-        const aiText = data?.message?.content?.[0]?.text || "No response from AI";
+        const rawText = data?.message?.content?.[0]?.text || "No response from AI";
 
-        aiText = aiText.replace(/[*]+/g, '').trim();
+        const aiText = rawText.replace(/[*]+/g, '').trim();
 
         if (type === "bug" || aiText.includes("escalating this issue")) {
             try {
