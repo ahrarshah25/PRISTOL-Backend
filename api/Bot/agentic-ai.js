@@ -534,8 +534,8 @@ You are PRISTOL AI — Protection. Perfected.
                 <p style="color: #475569; margin-bottom: 15px;">
                     <strong>🔍 Investigation Required:</strong> Please review this escalation and take appropriate action.
                 </p>
-                <a href="https://dashboard.pristol.com/admin/alerts" class="action-button">
-                    🚀 Review in Dashboard
+                <a href="https://pristol.vercel.app" class="action-button">
+                    🚀 Review Website
                 </a>
             </div>
 
@@ -564,7 +564,7 @@ You are PRISTOL AI — Protection. Perfected.
 
         await transporter.sendMail({
           from: `"PRISTOL AI System" <${process.env.EMAIL}>`,
-          to: "ahrar.0932@gmail.com",
+          to: "pristol.pk@gmail.com",
           subject: `🚨 PRISTOL System Escalation Alert [${priorityLevel}]`,
           text: `
 PRISTOL AI has escalated a technical issue.
